@@ -11,4 +11,11 @@
     --space-10: calc(var(--space-1) * 10);
     --space-11: calc(var(--space-1) * 11);
     --space-12: calc(var(--space-1) * 12);
+    --font-size-1: 12px;
+    --color-bg-head: #000081;
+    --color-bg-neutral-0: #fff;
+    --color-bg-neutral-500: #c0c0c0;
+    --color-bg-neutral-900: #000;
+    --color-neutral-0: #fff;
+    --color-neutral-500: #c0c0c0;
 }
