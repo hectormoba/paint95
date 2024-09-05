@@ -1,0 +1,19 @@
+nav {
+  width: 100%;
+  h1 {
+    font-size: var(--font-size-1);
+    color: var(--color-neutral-0);
+  }
+  .title_inner_wrapper {
+    display: flex;
+    background-color: var(--color-accent-primary);
+  }
+  button {
+    border: none;
+    background-color: inherit;
+    &:hover {
+      box-shadow: 1px 1px var(--color-neutral-900),
+        inset 1px 1px var(--color-neutral-0);
+    }
+  }
+}

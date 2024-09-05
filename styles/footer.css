@@ -1,0 +1,24 @@
+@import "./variables.css";
+
+footer {
+  background-color: var(--color-neutral-500);
+  height: var(--space-8);
+  button {
+    width: var(--space-3);
+    height: var(--space-3);
+    box-shadow: var(--box-shadow-button);
+  }
+  .selected_colors_switcher {
+    position: relative;
+    height: calc(var(--space-8) - 2px);
+    width: var(--space-8);
+    padding: var(--space-1);
+    box-shadow: inset 1px 1px var(--color-neutral-700), inset 2px 2px,
+      1px 1px var(--color-neutral-0);
+    background: repeating-conic-gradient(
+        var(--color-neutral-500) 0% 25%,
+        var(--color-neutral-0) 0% 50%
+      )
+      50%/4px 4px;
+  }
+}

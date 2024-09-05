@@ -1,47 +1,25 @@
 @import "./variables.css";
 
 * {
-    box-sizing: border-box;
-    margin: 0;
+  box-sizing: border-box;
+  margin: 0;
 }
 
 body {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: var(--space-2);
-    font-family: Helvetica, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: var(--space-2);
+  font-family: Helvetica, sans-serif;
 }
 
 #container {
-    border: 1px solid var(--color-neutral-500);
-}
-
-nav {
-    width: 100%;
-    h1 {
-        font-size: var(--font-size-1);
-        color: var(--color-neutral-0);
-    }
-    .title_inner_wrapper {
-        display: flex;
-        background-color: var(--color-bg-head);
-    }
-}
-
-button {
-    border: none;
-    background-color: inherit;
-    &:hover {
-        box-shadow:
-            1px 1px var(--color-bg-neutral-900),
-            inset 1px 1px var(--color-bg-neutral-0);
-    }
+  border: 1px solid var(--color-neutral-500);
 }
 
 .default_background {
-    background-color: var(--color-bg-neutral-500);
+  background-color: var(--color-neutral-500);
 }
 
 #paint_zone {
-    background-color: var(--color-bg-neutral-0);
+  background-color: var(--color-neutral-0);
 }

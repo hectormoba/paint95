@@ -1,34 +1,40 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Paint95 - Simple</title>
-        <script src="index.js"></script>
-        <link href="./styles/index.css" rel="stylesheet" />
-    </head>
-    <body>
-        <div class="container">
-            <nav>
-                <div>
-                    <div class="title_inner_wrapper">
-                        <img
-                            src="./icons/top_window_logo.webp"
-                            width="24"
-                            height="24"
-                        />
-                        <h1>Paint95</h1>
-                    </div>
-                </div>
-                <div class="default_background">
-                    <button>File</button>
-                    <button>Edit</button>
-                    <button>Image</button>
-                    <button>Options</button>
-                    <button>Help</button>
-                </div>
-            </nav>
-            <main>
-                <canvas id="paint_zone" width="500" height="400"></canvas>
-            </main>
+  <head>
+    <title>Paint95 - Simple</title>
+    <script type="module" src="index.js"></script>
+    <link href="./styles/index.css" rel="stylesheet" />
+    <link href="./styles/header.css" rel="stylesheet" />
+    <link href="./styles/footer.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <div>
+          <div class="title_inner_wrapper">
+            <img src="./icons/top_window_logo.webp" width="24" height="24" />
+            <h1>Paint95</h1>
+          </div>
         </div>
-    </body>
+        <div class="default_background">
+          <button>File</button>
+          <button>Edit</button>
+          <button>Image</button>
+          <button>Options</button>
+          <button>Help</button>
+        </div>
+      </nav>
+      <main>
+        <canvas id="painting_zone" width="500" height="400"></canvas>
+      </main>
+      <footer>
+        <div>
+          <div class="selected_colors_switcher">
+            <button id="primary_color_selector" data-color="#000"></button>
+            <button id="secondary_color_selector" data-color="#FF0000"></button>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>
