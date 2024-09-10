@@ -3,11 +3,7 @@
 footer {
   background-color: var(--color-neutral-500);
   height: var(--space-8);
-  button {
-    width: var(--space-3);
-    height: var(--space-3);
-    box-shadow: var(--box-shadow-button);
-  }
+
   .selected_colors_switcher {
     position: relative;
     height: calc(var(--space-8) - 2px);

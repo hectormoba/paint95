@@ -8,12 +8,18 @@ nav {
     display: flex;
     background-color: var(--color-accent-primary);
   }
-  button {
-    border: none;
-    background-color: inherit;
-    &:hover {
-      box-shadow: 1px 1px var(--color-neutral-900),
-        inset 1px 1px var(--color-neutral-0);
+
+  .nav_buttons {
+    background-color: var(--color-neutral-500);
+
+    button {
+      border: none;
+      width: var(--space-8);
+      background-color: inherit;
+      &:hover {
+        box-shadow: 1px 1px var(--color-neutral-900),
+          inset 1px 1px var(--color-neutral-0);
+      }
     }
   }
 }

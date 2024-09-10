@@ -1,5 +1,7 @@
 @import "./variables.css";
 
+/* RESETS AND GENERAL FORMATING */
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -12,14 +14,61 @@ body {
   font-family: Helvetica, sans-serif;
 }
 
+main {
+  display: flex;
+}
+
 #container {
   border: 1px solid var(--color-neutral-500);
+}
+
+aside {
+  flex: 0 0 var(--space-12);
+  padding-left: var(--space-3);
+  background-color: var(--color-neutral-500);
+  .tools_board {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .default_background {
   background-color: var(--color-neutral-500);
 }
 
+button {
+  width: var(--space-4);
+  height: var(--space-4);
+  padding: 0;
+  border: 2px solid var(--color-neutral-0);
+  border-left: solid var(--color-neutral-0);
+  border-right: solid var(--color-neutral-700);
+  border-bottom: solid var(--color-neutral-700);
+  &.active {
+    border: 2px solid var(--color-neutral-700);
+    border-left: solid var(--color-neutral-700);
+    border-right: 1.5px solid var(--color-neutral-0);
+    border-bottom: 1.5px solid var(--color-neutral-0);
+    background: repeating-conic-gradient(
+        var(--color-neutral-500) 0% 25%,
+        var(--color-neutral-0) 0% 50%
+      )
+      50%/4px 4px;
+  }
+  img {
+    width: var(--space-3);
+    height: auto;
+  }
+}
+
 #paint_zone {
   background-color: var(--color-neutral-0);
+}
+
+.cursor_precise {
+  cursor: url("../icons/cursors/precise.png") 14 14, auto;
+}
+
+.cursor_fill_bucket {
+  cursor: url("../icons/cursors/fill_bucket.png") 14 14, auto;
 }

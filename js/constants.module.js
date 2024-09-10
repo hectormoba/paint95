@@ -3,6 +3,7 @@ export const MODES = {
   brush_draw: "brush",
   air_brush_draw: "airbrush",
   erase: "erase",
+  fill: "fill",
   forms: {
     rectangle: "rectangle",
     elipse: "elipse",
